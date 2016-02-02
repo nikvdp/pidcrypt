@@ -62,7 +62,7 @@ var pidCrypt = require('./pidcrypt.js');
 var pidCryptUtil = require('./pidcrypt_util.js');
 var BigInteger = require('./jsbn.js');
 var SecureRandom = require('./rng.js');
-var Arcfour = require('./prng5.js');
+var Arcfour = require('./prng4.js');
 
 if(typeof(pidCrypt) != 'undefined' &&
    typeof(BigInteger) != 'undefined' &&//must have for rsa

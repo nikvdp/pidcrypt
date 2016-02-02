@@ -37,13 +37,4 @@ function ARC4next() {
 Arcfour.prototype.init = ARC4init;
 Arcfour.prototype.next = ARC4next;
 
-// Plug in your RNG constructor here
-function prng_newstate() {
-  return new Arcfour();
-}
-
-// Pool size must be a multiple of 4 and greater than 32.
-// An array of bytes the size of the pool will be passed to init()
-var rng_psize = 256;
-
 module.exports = Arcfour;
