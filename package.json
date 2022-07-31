@@ -10,7 +10,7 @@
     "type": "git"
   },
   "readmeFilename": "README.md",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
