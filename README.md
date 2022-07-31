@@ -1,6 +1,8 @@
 [Pidcrypt](https://www.pidder.de/pidcrypt/) (JS encryption library) for node.js/browserify
 ==========================================================================================
 
+**Update 2022: I no longer use or maintain this library. While I will try to merge PRs, [CryptoJS](https://www.npmjs.com/package/crypto-js) is probably a better choice for any new projects**
+
 This is a copy of the [pidCrypt javascript crypto library](https://www.pidder.de/pidcrypt/) with some modifications to make it compatible with node.js and browserify. Pidcrypt submodules are all accessible via `require`, and will automatically pull in any other submodule dependencies if needed.
 
 Installation
