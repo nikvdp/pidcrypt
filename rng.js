@@ -41,12 +41,6 @@ function SecureRandom() {
       this.rng_pool = new Array();
       this.rng_pptr = 0;
       var t;
-      if(navigator.appName == "Netscape" && navigator.appVersion < "5" && window.crypto) {
-        // Extract entropy (256 bits) from NS4 RNG if available
-        var z = window.crypto.random(32);
-        for(t = 0; t < z.length; ++t)
-          this.rng_pool[this.rng_pptr++] = z.charCodeAt(t) & 255;
-      }
       while(this.rng_pptr < rng_psize) {  // extract some randomness from Math.random()
         t = Math.floor(65536 * Math.random());
         this.rng_pool[this.rng_pptr++] = t >>> 8;
